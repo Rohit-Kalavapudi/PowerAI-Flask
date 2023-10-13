@@ -3,7 +3,7 @@ from PyPDF2 import PdfFileReader
 from flask_cors import CORS
 import PyPDF2
 from flask import jsonify
-import assemblyai as aai
+# import assemblyai as aai
 
 app = Flask(__name__)
 
@@ -31,18 +31,18 @@ def read_pdf():
     return p
 
 
-@app.route("/audio", methods=['POST'])
-def read_audio():
-    print("hii")
+# @app.route("/audio", methods=['POST'])
+# def read_audio():
+#     print("hii")
 
-    aai.settings.api_key = "3074dae4f6b74249bc9026edcb61bf09"
-    transcriber = aai.Transcriber()
+#     aai.settings.api_key = "3074dae4f6b74249bc9026edcb61bf09"
+#     transcriber = aai.Transcriber()
 
-    transcript = transcriber.transcribe("https://storage.googleapis.com/aai-web-samples/news.mp4")
+#     transcript = transcriber.transcribe("https://storage.googleapis.com/aai-web-samples/news.mp4")
 
-    text = (transcript.text)
+#     text = (transcript.text)
 
-    return jsonify(text)
+#     return jsonify(text)
     
 
 

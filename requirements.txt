@@ -2,5 +2,5 @@ Flask
 Flask-Cors
 requests
 PyPDF2
-assemblyaid
+
 gunicorn
