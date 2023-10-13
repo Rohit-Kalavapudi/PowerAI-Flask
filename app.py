@@ -28,6 +28,8 @@ def read_pdf():
         print(page_content)
 
     p=jsonify(page_content)
+    response = p
+    response.headers['Access-Control-Allow-Origin'] = '*'
     print(p)
     return p
 
