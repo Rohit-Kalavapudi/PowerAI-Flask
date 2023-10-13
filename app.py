@@ -28,6 +28,7 @@ def read_pdf():
         print(page_content)
 
     p=jsonify(page_content)
+    print(p)
     return p
 
 
